@@ -135,12 +135,5 @@ def ask():
         return jsonify({"error": "Error calling Groq API"}), 500
 
 
-# if __name__ == "__main__":
-#     app.run(host="0.0.0.0", port=8001, debug=True)
 if __name__ == "__main__":
-    import os
-    port = int(os.environ.get("PORT", 8000))  # use Render's PORT if available
-    app.run(host="0.0.0.0", port=port)
-
-
-
+    app.run(host="0.0.0.0", port=8001, debug=True)
